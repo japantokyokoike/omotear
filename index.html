@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+		   <link rel="stylesheet" type="text/css" href="css/index.css">
+		   <!--Bootstrap-->
+		   <link rel="stylesheet" href="bootstrap-4.4.1/css/bootstrap.min.css">
+		  <!--jQuery Mobile-->
+		  <link rel="stylesheet" href="jqm-1.4.5/jquery.mobile-1.4.5.min.css" />
+		  <script src="jqm-1.4.5/jquery-1.11.1.min.js"></script>
+		  <script src="jqm-1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <title>Hello World</title>
+    </head>
+    <body>
+  <!--　HOME　-->
+  <div id="home" data-role="page" data-title="HOME">
+    <div data-role="header">
+      <h1>omote:ar</h1>
+      <div data-role="navbar">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#week">毎週</a></li>
+          <li><a href="#month">毎月</a></li>
+          <li><a href="#year">年/半期</a></li>
+        </ul>
+      </div>
+    </div>
+    <div data-role="content">
+      占いリンクブックアプリ「オモテアール」です。
+    </div>
+    <div data-role="footer">
+    </div>
+  </div>
+
+  <!--毎週-->
+  <div id="week" data-role="page" data-title="毎週">
+    <div data-role="header">
+      <h1>omote:ar</h1>
+      <div data-role="navbar">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#week">毎週</a></li>
+          <li><a href="#month">毎月</a></li>
+          <li><a href="#year">年/半期</a></li>
+        </ul>
+      </div>
+    </div>
+    <div data-role="content">
+      <dl>
+        <!--月曜日-->
+        <dt><a href="https://abehiro-october.com/?cat=24" target="_blank">阿部ヒロの『近未来案内所』</a></dt><dd>- カードのお告げ</dd><hr>
+        <dt><a href="https://vendome.jp/aoyama/magazine/horoscope/" target="_blank">VENDOME AOYAMA MAGAZINE｜</a></dt><dd>- くまの"テオくん占い"｜ステラ薫子監修・西洋占星術で占う今週の運勢
+        </dd><hr>
+        <dt><a href="https://ameblo.jp/frontier-tomo/theme-10044819259.html" target="_blank">占い師・とものブログ -Freedom-</a></dt><dd>- 今週の占い</dd><hr>
+        <dt><a href="http://uranai.d-square.co.jp/week_12seiza.html" target="_blank">占いスクエア</a></dt><dd>- 今週の運勢</dd><hr>
+        <dt><a href="https://uranaitv.jp/content/tag/weekly-fortune" target="_blank">占いTVニュース</a></dt><dd>- 千田歌秋の12星座週間占い</dd><hr>
+        <dt><a href="http://uranai.news/category/タロット/" target="_blank">占いニュース</a></dt><dd>- 占いニュース　まるっとさんの週間タロット占い</dd><hr>
+        <dt><a href="http://www.lamp-web.com/syukan/" target="_blank">占いの館ランプ</a></dt><dd>- 天 使 の 週　間　星 占 い</dd><hr>
+        <dt><a href="https://www.qole.com/sp/04_syu/syu_top.html" target="_blank">クオーレ</a></dt><dd>- 今週のあなたの運勢【無料12星座占い】</dd><hr>
+        <dt><a href="http://www.ageun.com/weekly/" target="_blank">幸運体質マガジン アゲウン</a></dt><dd>- 今週の運勢ランキング（月曜～12星座別の占い 無料＆毎週更新）</dd><hr>
+        <dt><a href="https://pado-nns.com/?s=さかにゅー占い" target="_blank">さかにゅー</a></dt><dd>- さかにゅー占い</dd><hr>
+        <dt><a href="https://serai.jp/living/horoscope" target="_blank">小学館の雑誌『サライ』</a></dt><dd>- ニャンコ先生の開運星占い</dd><hr>
+        <dt><a href="http://syuraba.life/seiza" target="_blank">修羅場ライフ</a></dt><dd>- 12星座占い </dd><hr>
+        <dt><a href="http://shingeji.jp/2019/09/14/今週の占い/" target="_blank">心華寺</a></dt><dd>- 今週の占い</dd><hr>
+        <dt><a href="https://www.odakyu-sc.com/shinjuku-mylord/constellation/" target="_blank">新宿ミロード</a></dt><dd>- 星占い </dd><hr>
+        <dt><a href="https://tapple.me/lab/tag/%E5%8D%A0%E3%81%84/" target="_blank">タップルラボ</a></dt><dd>- タップルラボ</dd><hr>
+        <dt><a href="https://ameblo.jp/nakagome-ai/entrylist.html" target="_blank">タロットカードでスッキリライフ</a></dt><dd>- 週刊☆タロットde生まれ月占い☆</dd><hr>
+        <dt><a href="https://d-will.jp/G/OPERATORASTROLOGY/INDEX/TYPE/1/" target="_blank">電話占いウィル</a></dt><dd>- 今週の無料占い</dd><hr>
+        <dt><a href="http://www.tokyo-beauty.jp/contents/fortune/" target="_blank">東京ビューティ</a></dt><dd>- 今週の運勢</dd><hr>
+        <dt><a href="http://www.neol.jp/horoscope/" target="_blank">neol.jp</a></dt><dd>- Horoscope</dd><hr>
+        <dt><a href="http://howcollect.jp/user/index/id/3110" target="_blank">ハウコレ</a></dt><dd>- 12星座別＊今週の運勢＆恋のラッキーアイテム</dd><hr>
+        <dt><a href="http://bikkei-ss.hatenablog.com/archive/category/今週の運勢" target="_blank">ビッケイ占星研究所</a></dt><dd>- 今週の運勢</dd><hr>
+        <dt><a href="http://www.freyjanet.com/" target="_blank">フレイヤ　今週の12星座占い</a></dt><dd>- フレイヤ　今週の12星座占い</dd><hr>
+        <dt><a href="http://www.projectmaria.com/12seiza/index.html" target="_blank">プロジェクトマリア</a></dt><dd>- プロジェクトマリア</dd><hr>
+        <dt><a href="https://www.hoshino-megumi.com/fortune" target="_blank">ほしのめぐみ公式サイト</a></dt><dd>- ほしのめぐみ公式サイト</dd><hr>
+        <dt><a href="https://mainichikirei.jp/fortune-telling/" target="_blank">毎日キレイ</a></dt><dd>- 毎日キレイ　星占いでランキング</dd><hr>
+        <dt><a href="http://manatopi.u-can.co.jp/break/index.html" target="_blank">マナトピ</a></dt><dd>- 今週の12星座占い</dd><hr>
+        <dt><a href="http://shingeji.jp/2019/09/14/今週の占い/" target="_blank">心華寺金港辯財天</a></dt><dd>- 今週の占い</dd><hr>
+        <dt><a href="http://www.yogaroom.jp/yogahack/fortune" target="_blank">ヨガハック　ヨガ占い</a></dt><dd>- 12星座・ヨガ占い</dd><hr>
+        <dt><a href="https://youpouch.com/author/potami/" target="_blank">Pouch</a></dt><dd>- 【今週の運勢】よってけ！ ポタちゃんち</dd><hr>
+        <dt><a href="http://blog.goo.ne.jp/amiv88" target="_blank">Amity Moon</a></dt><dd>- 今週のリーディング</dd><hr>
+        <dt><a href="https://www.audition-debut.com/audition/fortune/" target="_blank">Audition&Debut</a></dt><dd>- オーディション運</dd><hr>
+        <dt><a href="http://www.beautynewstokyo.jp/tag/%E5%8D%A0%E3%81%84/" target="_blank">beauty news tokyo</a></dt><dd>- 週間タロット占い</dd><hr>
+        <dt><a href="http://buzzap.jp/news/category/c22/" target="_blank">BUZZAP</a></dt><dd>- 今週のシンクロニシティ占い</dd><hr>
+        <dt><a href="https://lulucos.jp/by-s/others" target="_blank">by.S</a></dt><dd>- by.S 12星座占い</dd><hr>
+        <dt><a href="https://cancam.jp/archives/category/uranai" target="_blank">CanCam</a></dt><dd>- 悪魔の三姉妹占い</dd><hr>
+        <dt><a href="http://classy-online.jp/fortune/weekly/" target="_blank">CLASSY</a></dt><dd>- 海の生きもの占い</dd><hr>
+        <dt><a href="http://www.cosmopolitan-jp.com/entertainment/horoscope/" target="_blank">COSMOPOLITAN</a></dt><dd>- 今週の12星座 恋愛占い</dd><hr>
+        <dt><a href="https://cyuncore.com/author/0055" target="_blank">cyuncore</a></dt><dd>- 1週間の運勢とアドバイス</dd><hr>
+        <dt><a href="https://domani.shogakukan.co.jp/fortune-telling/numerology" target="_blank">Domani</a></dt><dd>- 【数秘術】運命数から導く週間“女の数字占い”</dd><hr>
+        <dt><a href="http://www.esankei.com/jupiter/index.html" target="_blank">esankei.com</a></dt><dd>- 今週の占い</dd><hr>
+        <dt><a href="https://esse-online.jp/uranai" target="_blank">ESSEonline（エッセ オンライン）</a></dt><dd>- 天城映の星占い</dd><hr>
+        <dt><a href="https://www.fashion-headline.com/horoscope" target="_blank">FASHION HEADLINE</a></dt><dd>- ムーン・リーの12星座占い</dd><hr>
+        <dt><a href="https://mi-journey.jp/foodie/horoscope/" target="_blank">FOODIE</a></dt><dd>- FOODIE占い</dd><hr>
+        <dt><a href="http://www.honeyee.com/horoscope" target="_blank">honeyee.com</a></dt><dd>- 青石ひかり先生が西洋占星術とタロットで占う「今週の12星座」</dd><hr>
+        <dt><a href="https://isuta.jp/horoscope" target="_blank">isuta[イスタ]</a></dt><dd>- SUGARさんが占う12星座の今週の運勢</dd><hr>
+        <dt><a href="https://www.itmedia.co.jp/author/224527/" target="_blank">ITmedia</a></dt><dd>- ねとらぼ12星座占い</dd><hr>
+        <dt><a href="https://www.msn.com/ja-jp/lifestyle/horoscope" target="_blank">msn</a></dt><dd>- MSN占い</dd><hr>
+        <dt><a href="https://www.mylohas.net/horoscope/stoic/" target="_blank">MYLOHAS</a></dt><dd>- LUAの12星座占い</dd><hr>
+        <dt><a href="http://ogatism.jp/" target="_blank">ogatism</a></dt><dd>- オガティの星占い</dd><hr>
+        <dt><a href="https://oggi.jp/horoscope" target="_blank">Oggi.jp</a></dt><dd>- 裏ホロスコープ占い</dd><hr>
+        <dt><a href="https://parsley.client.jp/week_month.html" target="_blank">*parsley*畑の占いCafe</a></dt><dd>- 週間＆月間の運勢占い</dd><hr>
+        <dt><a href="https://picora.net/week-fortune/" target="_blank">Picora</a></dt><dd>- 今週の星座占い</dd><hr>
+        <dt><a href="http://www.poroco.co.jp/happylife/fortune/weekly/index.php" target="_blank">poroco ポロコ</a></dt><dd>- ASTROLOGY 星座占い</dd><hr>
+        <dt><a href="https://magazine.sheltter.vc/category/horoscope/" target="_blank">SHELMAG</a></dt><dd>- 占星術師 木田真也さんの12星座運勢占い</dd><hr>
+        <dt><a href="https://telling.asahi.com/horoscope" target="_blank">telling,(テリング)</a></dt><dd>- 怪盗デビ子の星占い</dd><hr>
+        <dt><a href="https://i-voce.jp/feed/lovemedo-weekly/" target="_blank">VOCE</a></dt><dd>- Love Me Doのウィークリー占い</dd><hr>
+        <dt><a href="http://voguegirl.jp/horoscope/shitake/" target="_blank">VOGUE GIRL</a></dt><dd>- しいたけ占い</dd><hr>
+      </dl>
+    </div>
+    <div data-role="footer">
+    </div>
+  </div>
+
+  <!--毎月-->
+  <div id="month" data-role="page" data-title="毎月">
+    <div data-role="header">
+      <h1>omote:ar</h1>
+      <div data-role="navbar">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#week">毎週</a></li>
+          <li><a href="#month">毎月</a></li>
+          <li><a href="#year">年/半期</a></li>
+        </ul>
+      </div>
+    </div>
+    <div data-role="content">
+      <dl>
+        <dt><a href="http://www.toysland.com/month/" target="_blank">占い無料相談室 ～Aegis～</a></dt><dd>- 星降る夜の１２星座占い</dd><hr>
+        <dt><a href="http://www.rosemary.ne.jp/alpha/horoscope/horo.htm" target="_blank">ALPHA占い館</a></dt><dd>- 今月の星占い</dd><hr>
+        <dt><a href="https://amuelle.jp/category/koikatsu/" target="_blank">amuelle</a></dt><dd>- ジーニーが届ける 12星座別・今月のチャームワード</dd><hr>
+        <dt><a href="http://ananweb.jp/keywords/12%E6%98%9F%E5%BA%A7/" target="_blank">ananweb - マガジンハウス</a></dt><dd>- 12星座</dd><hr>
+        <dt><a href="https://angeltime.net/category/uranai/seizauranai/kongetsu/" target="_blank">angel time</a></dt><dd>- アストロジェミナスNORIKOの12星座占い</dd><hr>
+        <dt><a href="https://www.dokujo.com/category/culture/" target="_blank">独女 [DOKUJO]</a></dt><dd>- 運勢</dd><hr>
+        <dt><a href="https://hugkum.sho.jp/?s=星占い" target="_blank">HugKum</a></dt><dd>- ELLE　イヴルルド遙華のハッピー★フォーチュンセラピー</dd><hr>
+        <dt><a href="http://ameblo.jp/happyseasons-aoi/theme-10027692705.html" target="_blank">Happy Seasons</a></dt><dd>- まーさ先生の「ママ＆キッズの子育て星占い」</dd><hr>
+        <dt><a href="https://www.d-kintetsu.co.jp/hoop/uranai/" target="_blank">HOOP</a></dt><dd>- 占いハウスクィーン</dd><hr>
+        <dt><a href="https://www.ienomistyle.com/column/horoscope/" target="_blank">ienomistyle</a></dt><dd>- あなたの今月の運勢と家飲み運は？</dd><hr>
+        <dt><a href="https://tarot.ism-21.com/monthly.html" target="_blank">ILLUMINATRIX大阪西宮</a></dt><dd>- ハッピー星占い</dd><hr>
+        <dt><a href="http://www.sun-luna.jp/kongetsu.html" target="_blank">太陽と月の伝説</a></dt><dd>- 今月のタロット占い</dd><hr>
+        <dt><a href="https://lierre.in/free/astro.html" target="_blank">電話占いリエル</a></dt><dd>- 12星座占い</dd><hr>
+        <dt><a href="https://litora.jp/cat18/" target="_blank">LITORA（リトラ）</a></dt><dd>- シナモン週占い（五術で観る一週間） </dd><hr>
+        <dt><a href="https://marisol.hpplus.jp/horoscope/" target="_blank">Marisol(マリソル)</a></dt><dd>- 石井ゆかりの大人の星占い</dd><hr>
+        <dt><a href="https://mart-magazine.com/fortune/monthly_horoscope/" target="_blank">Mart(マート)</a></dt><dd>- 鏡リュウジ先生の「調味料占い」</dd><hr>
+        <dt><a href="https://model-bible.com/category/horoscope/" target="_blank">モデルバイブル/MODEL BIBLE</a></dt><dd>- グレース椿宮が占う今月の運勢＆HAPPYワンポイントアドバイス</dd><hr>
+        <dt><a href="http://www.nambacity.com/horoscope/index.html" target="_blank">なんばCITY</a></dt><dd>- horoscope</dd><hr>
+        <dt><a href="https://nazology.net/archives/category/spiritual/fortune-telling" target="_blank">ココロジー</a></dt><dd>- 12星座占い</dd><hr>
+        <dt><a href="http://nichigopress.jp/category/live/erisia/" target="_blank">NICHIGO PRESS</a></dt><dd>- エリシアの星座占い</dd><hr>
+        <dt><a href="https://numero.jp/astrology/monthly/" target="_blank">Numero TOKYO</a></dt><dd>- ムーン・リーの星占い</dd><hr>
+        <dt><a href="https://ontomo-mag.com/tag/aoishi-horoscope/" target="_blank">Webマガジン「ONTOMO」</a></dt><dd>- 青石ひかりの12星座☆音楽占い</dd><hr>
+        <dt><a href="https://otonasalone.jp/author/writer-saya/" target="_blank">OTONA SALONE[オトナサローネ] </a></dt><dd>- 九星フラワー占い</dd><hr>
+        <dt><a href="https://otonasalone.jp/author/writer-y-ko/" target="_blank">占いCafe*parsley*</a></dt><dd>- 週間＆月間の運勢占い</dd><hr>
+        <dt><a href="http://parsley.client.jp/" target="_blank">*parsley*占いCafe</a></dt><dd>- OTONA SALONE 九星フラワー占い</dd><hr>
+        <dt><a href="https://precious.jp/list/horoscope-monthly" target="_blank">Precious.jp（プレシャス）</a></dt><dd>- マダム・モニカの12星座占い</dd><hr>
+        <dt><a href="https://reli-a.com/category/無料占い" target="_blank">Relia(リリア)</a></dt><dd>- Relia（リリア）の無料占い</dd><hr>
+        <dt><a href="https://ruvie.jp/fortune" target="_blank">RUVIE（ルビー）</a></dt><dd>- 天河りんご先生の12星座占い</dd><hr>
+        <dt><a href="https://smarby.jp/horoscope" target="_blank">smarby</a></dt><dd>- 今月の運勢は？ママ・パパ向け星座占い</dd><hr>
+        <dt><a href="https://spirituabreath.com/category/占い/ハワイアンフラワー占い" target="_blank">SPIBRE</a></dt><dd>- ハワイアンフラワー占い</dd><hr>
+        <dt><a href="https://flapjacks.info/category/horoscope" target="_blank">Spilover</a></dt><dd>- 今月の運勢・恋愛運</dd><hr>
+        <dt><a href="https://stylehaus.jp/pages/horoscope/" target="_blank">Style Haus</a></dt><dd>- 恋の星読み　恋愛占い</dd><hr>
+        <dt><a href="http://style-knowledge.com/category/fortune%e2%80%90telling%e3%83%bbfuusui/" target="_blank">Style Knowledge</a></dt><dd>- Style Haus YATAのラグナ占星術</dd><hr>
+        <dt><a href="https://tabi-labo.com/author/Yusetsu_Fujishima" target="_blank">TABI LABO</a></dt><dd>- 12星座占い</dd><hr>
+        <dt><a href="https://www.tjapan.jp/_tags/占い" target="_blank">T JAPAN</a></dt><dd>- 濱 美奈子 ハーモニー占星術</dd><hr>
+        <dt><a href="https://tfm-plus.gsj.mobi/news/index.html?ctg=夏目みやび" target="_blank">TOKYO FM＋</a></dt><dd>- 12星座別・月運</dd><hr>
+        <dt><a href="https://ameblo.jp/roco-color/theme-10111222632.html" target="_blank">ＴＯＭＯのデイリー星便り</a></dt><dd>- 星の動きとその影響☆12星座別（1ヵ月保存版）</dd><hr>
+        <dt><a href="http://www.25ans.jp/wedding/horoscope/" target="_blank">25ans(ヴァンサンカン)オンライン</a></dt><dd>- 綺羅ソフィアの～星の教えで幸せになる！</dd><hr>
+        <dt><a href="https://www.25ans.jp/yuji-pointday/" target="_blank">25ans(ヴァンサンカン)オンライン</a></dt><dd>- 占い王子yujiが解説！ 星座別POINT DAY</dd><hr>
+        <dt><a href="https://veryweb.jp/fortune/relationship/" target="_blank">VERY［ヴェリィ］</a></dt><dd>- あおきさん占い</dd><hr>
+        <dt><a href="https://www.vogue.co.jp/horoscope/monthly" target="_blank">VOGUE JAPAN</a></dt><dd>- スーザン・ミラーのマンスリー星占い</dd><hr>
+        <dt><a href="http://www.webchronos.net/divination/" target="_blank">高級腕時計専門誌クロノス日本版[webChronos]</a></dt><dd>- 時計占い</dd><hr>
+        <dt><a href="https://wellfy.jp/?author=10" target="_blank">wellfy</a></dt><dd>- webChronos　時計占い</dd><hr>
+        <dt><a href="http://withonline.jp/fortune/" target="_blank">with</a></dt><dd>- 流光七奈の愛されホロスコープa&今月の星占い</dd><hr>
+        <dt><a href="http://uranai.wizbiz.me/index.html" target="_blank">WizBiz経営者占い</a></dt><dd>- 九星気学でみる今月の運勢</dd><hr>
+        <dt><a href="https://ameblo.jp/zephyr/theme-10104774033.html" target="_blank">ZEPHYR</a></dt><dd>- 12星座占い</dd><hr>
+        <dt><a href="https://365-girl.com/fortune/constellation/" target="_blank">365がぁる</a></dt><dd>- 12星座占い・星占い</dd><hr>
+      </dl>
+    </div>
+    <div data-role="footer">
+    </div>
+  </div>
+  <!--年/半期-->
+  <div id="year" data-role="page" data-title="年/半期">
+    <div data-role="header">
+      <h1>omote:ar</h1>
+      <div data-role="navbar">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#week">毎週</a></li>
+          <li><a href="#month">毎月</a></li>
+          <li><a href="#year">年/半期</a></li>
+        </ul>
+      </div>
+    </div>
+    <div data-role="content">
+      <dl>
+        <dt><a href="https://asm.asahi.com/article/12986925" target="_blank">AERA.dot</a></dt><dd>- AERA.dot メモリアルイヤーを駆け抜けよう 財力開運アカデミー2020上半期</dd><hr>
+        <dt><a href="https://allabout.co.jp/gm/gc/482372/" target="_blank">AllAbout</a></dt><dd>- 12星座別！2020年3月から6月の金運アップ術【牡羊座～乙女座】</dd><hr>
+        <dt><a href="https://allabout.co.jp/gm/gc/482373/" target="_blank">AllAbout</a></dt><dd>- 12星座別！2020年3月から6月の金運アップ術 【天秤座～魚座】</dd><hr>
+        <dt><a href="https://akoako.hatenablog.com/entry/2018/06/01/145126" target="_blank">AKOAKO's diary</a></dt><dd>- ('Turning Points ('牡牛座天王星のもたらすチャンス('１２星座別今後７年の運勢('　【２０１８～２０２６】</dd><hr>
+        <dt><a href="https://amb-uranai.ameba.jp/special_content/2020/column/constellation_fortune_ranking" target="_blank">SATORI</a></dt><dd>- 2020年12星座の運勢ランキング【大ボリューム無料版】 </dd><hr>
+        <dt><a href="https://www.ana.co.jp/travelandlife/fortune/2020_01/" target="_blank">ANA</a></dt><dd>- ANA Travel&Life　2020年上半期の旅占い</dd><hr>
+        <dt><a href="https://ananweb.jp/uranai/2020占い/279918/" target="_blank">anan</a></dt><dd>- 現状を打破するには?… 12星座別・2020年上半期の運勢をおさらい!</dd><hr>
+        <dt><a href="https://anna-media.jp/archives/223375" target="_blank">anna</a></dt><dd>- anna 生まれ日で見る2020 今年の運勢</dd><hr>
+        <dt><a href="https://www.andgirl.jp/search?q=2020年の運勢" target="_blank">andGirl</a></dt><dd>- andGirl 2020年全体運</dd><hr>
+        <dt><a href="https://baila.hpplus.jp/33755" target="_blank">@BAILA</a></dt><dd>- 鏡リュウジが占う【12星座別・2020年の運勢】</dd><hr>
+        <dt><a href="http://www.beautynewstokyo.jp/2020上半期の総合運12星座ランキング/" target="_blank">beauty news tokyo</a></dt><dd>- beauty news tokyo　タロットで占う「2020上半期の総合運」12星座ランキング</dd><hr>
+        <dt><a href="https://belcy.jp/tags/divination-summary" target="_blank">BELCY</a></dt><dd>- BELCY 占いまとめ</dd><hr>
+        <dt><a href="https://uranai.biglobe.ne.jp/year2020/#column" target="_blank">BIGLOBE</a></dt><dd>- BIGLOBE　花凛の１２星座占い</dd><hr>
+        <dt><a href="https://bitdays.jp/uranai/page/5/" target="_blank">BITDAYS</a></dt><dd>- BITDAYS horoscope</dd><hr>
+        <dt><a href="https://buzzap.jp/news/20200101-fortuna-813/" target="_blank">BUZZAP</a></dt><dd>- 【新春企画】2020年のあなたの運勢は？シンクロニシティ占い特別編</dd><hr>
+        <dt><a href="https://cancam.jp/archives/tag/2020年星座x血液型占い" target="_blank">cancam</a></dt><dd>- 2020年星座×血液型占い</dd><hr>
+        <dt><a href="https://wonderful-year.org/star/" target="_blank">CLAIRE</a></dt><dd>- 12星座占いで見る、2020年の運勢をチェックしてみましょう！</dd><hr>
+        <dt><a href="https://cocoloni.jp/fortune/1324646/" target="_blank">cocoloni PROLO</a></dt><dd>- 2020年の恋愛・結婚はどうなる？！2020年の運勢・占いまとめ</dd><hr>
+        <dt><a href="https://www.cosmopolitan.com/jp/entertainment/horoscope/a29837385/horoscope-of-jan2020/" target="_blank">COSMOPOLITAN</a></dt><dd>- 2020年上半期のLOVE＆SEX運、どうなる？</dd><hr>
+        <dt><a href="https://crea.bunshun.jp/list/matome/horoscope-overview-2020" target="_blank">CREA</a></dt><dd>- 流光七奈の12星座占い 2020年の全体運</dd><hr>
+        <dt><a href="https://crea.bunshun.jp/articles/-/24112?page=2" target="_blank">CREA</a></dt><dd>- 橘さくらが占う2020年 12星座別 開運アドバイス</dd><hr>
+        <dt><a href="https://more.hpplus.jp/love/l-matome/53637/1/" target="_blank">DAILY MORE</a></dt><dd>- 人気占術研究家・水晶玉子の12星座占いまとめ - 今年はどんな運勢？気になる恋愛運・結婚運もチェック！</dd><hr>
+        <dt><a href="https://dpoint.jp/ctrw/town/feature/life12_uranai2020/index.html" target="_blank">dポイントクラブ</a></dt><dd>- まちポ12星座占い</dd><hr>
+        <dt><a href="https://eclat.hpplus.jp/article/45230" target="_blank">eclat</a></dt><dd>- レイコ・ローラン 12星座別「2020年はこうなる！」</dd><hr>
+        <dt><a href="https://www.elle.com/jp/horoscope/features/a30450280/saya202001/" target="_blank">ELLE</a></dt><dd>- Sayaの星占い｜2020年上半期の運勢</dd><hr>
+        <dt><a href="https://www.elle.com/jp/horoscope/yuji-column/a29768922/horoscope-yuji-2020/" target="_blank">ELLE</a></dt><dd>- 星読みヒーラーYujiが占う！ 12星座別・2020年上半期の運勢</dd><hr>
+        <dt><a href="https://www.elle.com/jp/horoscope/features/g30236290/saya-personal2020-12/" target="_blank">ELLE</a></dt><dd>- 【12星座別・2020年星占い】Sayaの開運メッセージ</dd><hr>
+        <dt><a href="http://ellegirl.jp/article/feat_horoscope_by_lucy_green_18_1227/" target="_blank">ELLEGIRL</a></dt><dd>- 2020年上半期、大変化の年をどう向かえる？ ルーシー・グリーンが指南する12星座占い</dd><hr>
+        <dt><a href="https://ellegirl.jp/horoscope/feat_horoscope_2020_by_lucy_green2_19_1202/" target="_blank">ELLEGIRL</a></dt><dd>- 【決定版・2020年上半期占い】恋も仕事も運気を上げる！ ルーシー・グリーン先生の12星座星占い</dd><hr>
+        <dt><a href="https://esse-online.jp/uranai/207507" target="_blank">ESSE</a></dt><dd>- 当たりすぎ！2020年上半期の運勢がわかる天城映の星占い</dd><hr>
+        <dt><a href="https://fashionbox.tkj.jp/archives/tag/年間占い" target="_blank">FASHION BOX</a></dt><dd>- 年間占い</dd><hr>
+        <dt><a href="https://fashionbox.tkj.jp/archives/1151487" target="_blank">FASHION BOX</a></dt><dd>- 【水晶玉子の女傑占い】2020年は転機の1年！ あなたの運気はどうなる？</dd><hr>
+        <dt><a href="https://www.fashion-headline.com/horoscope/129" target="_blank">FASHION HEADLINE</a></dt><dd>- ムーン・リーの12星座占い</dd><hr>
+        <dt><a href="https://flagshop.jp/fs/shop/pages/fscts3443.aspx" target="_blank">FLAG SHOP</a></dt><dd>- かよムーンの守護龍星占い2020年の運気</dd><hr>
+        <dt><a href="https://mi-journey.jp/foodie/horoscope_annual/" target="_blank">FOODIE</a></dt><dd>- 令和2年（ねずみ年）の運勢は？素敵な1年をアドバイス！</dd><hr>
+        <dt><a href="https://gingerweb.jp/hashtags/イヴルルド遙華" target="_blank">GINGERweb</a></dt><dd>- 12星座別2020年のお告げ</dd><hr>
+        <dt><a href="https://ginzamag.com/horoscope/shouzuki-ayano-2020-oneyear/" target="_blank">GINZA</a></dt><dd>- 12星座別2020年のお告げ　章月綾乃の「白ヤギさん、黒ヤギさんからの開運レター」</dd><hr>
+        <dt><a href="https://girl.houyhnhnm.jp/culture/mirascope_first_half_of_the_year_2020" target="_blank">GIRL HOUYHNHNM</a></dt><dd>- 2020年上半期のあなたの運勢は？ 恋愛運も金運も！ 令和を駆け抜けるミラ先生の12星座占い。 </dd><hr>
+        <dt><a href="https://goisu.net/special/053" target="_blank">GoisuNet</a></dt><dd>- 2020年の運勢・占い開運大特集!</dd><hr>
+        <dt><a href="https://one.hpplus.jp/eclat/40536" target="_blank">HAPPY PLUS ONE</a></dt><dd>- １２星座別　２０２０年までの"３年占い"</dd><hr>
+        <dt><a href="https://www.honeyee.com/feature/life/003393" target="_blank">honeyee.com</a></dt><dd>- 2020年上半期の運勢は？青石ひかりが鑑定する12星座占い
+        </dd><hr>
+        <dt><a href="https://www.horoscopes.jp/2020-hoshiuranai" target="_blank">Horoscopes.jp</a></dt><dd>- 2020 星占い</dd><hr>
+        <dt><a href="https://tarot.ism-21.com/monthly.html" target="_blank">ILLUMINATRIX</a></dt><dd>- ハッピー星占い</dd><hr>
+        <dt><a href="https://isuta.jp/horoscope-lovefortune/2020/first-half" target="_blank">isuta</a></dt><dd>- 占い師・SUGARさんが占う2020年上半期の12星座の運勢</dd><hr>
+        <dt><a href="http://jj-jj.net/divination/fortune-cycle/" target="_blank">JJnet</a></dt><dd>- イヴルルド遙華先生のフォーチュンサイクル</dd><hr>
+        <dt><a href="https://koimemo.com/article/16410" target="_blank">KOIMEMO</a></dt><dd>- 2020年の最強運勢をランキング形式で発表。恋愛・仕事・金運・健康運を占い開運招福</dd><hr>
+        <dt><a href="https://kufura.jp/life/hobby/102045" target="_blank">kufura</a></dt><dd>- 【あなたの2020年は…】イヴルルド遙華が占う12星座別・今年の運勢</dd><hr>
+        <dt><a href="https://lee.hpplus.jp/column/1553186/3/" target="_blank">LEE</a></dt><dd>- 2020年Sayaの読む星占いスペシャル「仕事とパートナーシップ＆12星座別 年間バイオリズム」</dd><hr>
+        <dt><a href="http://www.sun-luna.jp/kotoshi.html" target="_blank">太陽と月の伝説</a></dt><dd>- 無料 2020年前半のタロット占い</dd><hr>
+        <dt><a href="https://lierre.in/free/2019.html" target="_blank">Lierre</a></dt><dd>- 2020年の運勢は？2020年の12星座占い</dd><hr>
+        <dt><a href="https://limo.media/articles/-/15206" target="_blank">Limo</a></dt><dd>- 【小林 明美の12星座占い】大転換の2020年上半期。あなたが幸せに過ごすための開運ポイントは？</dd><hr>
+        <dt><a href="https://limo.media/articles/-/15334" target="_blank">Limo</a></dt><dd>- 【みちるの2020年 前半期 金運占い】「使っても入ってくる!?」お金の道が開く12星座別アドバイス</dd><hr>
+        <dt><a href="https://mart-magazine.com/life-people/column/46794/" target="_blank">Mart</a></dt><dd>- 鏡リュウジ先生監修　幸せを引き寄せ！「2020年上半期あなたの運勢」</dd><hr>
+        <dt><a href="https://mer-web.jp/lifestyle/292689/" target="_blank">mer</a></dt><dd>- 【2020年mer上半期占い】1月06月の運勢はどうなる？</dd><hr>
+        <dt><a href="https://mery.jp/1074683" target="_blank">MERY</a></dt><dd>- 2020年MERY上半期占いa&あなたの運勢は？</dd><hr>
+        <dt><a href="https://micane.jp/category/column/ninestar" target="_blank">micane</a></dt><dd>- 2020年（令和2年）の運勢や吉方位、運気アップの方法を徹底紹介</dd><hr>
+        <dt><a href="https://milimo.jp/uranai/17113/" target="_blank">無料占いmilimo [ミリモ]</a></dt><dd>- 令和2年の運気は??2020年-今年の運勢-完全無料当たる星座占い</dd><hr>
+        <dt><a href="https://mi-mollet.com/articles/-/21292" target="_blank">mi-mollet</a></dt><dd>- 鏡リュウジの星のアラート占い　星座別 2020年上半期の運勢</dd><hr>
+        <dt><a href="https://mi-mollet.com/articles/-/18697?page=3&per_page=1" target="_blank">mi-mollet</a></dt><dd>- カリスマ占星術師Keiko 2020年上半期月星座占い</dd><hr>
+        <dt><a href="https://www.mine-3m.com/mine/news/image?news_id=104341" target="_blank">MINE</a></dt><dd>- 2020年上半期占い</dd><hr>
+        <dt><a href="https://www.mine-3m.com/mine/news/image?news_id=104341" target="_blank">MINE</a></dt><dd>- MINE 【2020年上半期】人気占い師・真木あかりが運勢を発表！</dd><hr>
+        <dt><a href="https://uranai-mint.com/tag/2020年/" target="_blank">mint</a></dt><dd>- mint 星座占いで解る2020年</dd><hr>
+        <dt><a href="https://model-bible.com/horoscope/2020/" target="_blank">MODEL BIBLE</a></dt><dd>- グレース椿宮の2020年のテーマ＆開運アドバイス</dd><hr>
+        <dt><a href="https://mycale.jp/articleDetail.php?aKey=226" target="_blank">MyCalendar Web</a></dt><dd>- ジーニーが贈る★2020年はこんな年に</dd><hr>
+        <dt><a href="https://mycale.jp/articleDetail.php?aKey=247" target="_blank">MyCalendar Web</a></dt><dd>- ジーニーさんがそっと教えてくれた★2020年、あなたの恋模様</dd><hr>
+        <dt><a href="https://www2.myjcom.jp/extra/fortune/sp2020/" target="_blank">My J:COM</a></dt><dd>- 12星座が教えてくれるあなたの2020年の運勢</dd><hr>
+        <dt><a href="https://www.mylohas.net/2020/01/204333horoscope_2020.html" target="_blank">MYLOHAS</a></dt><dd>- キャメレオン竹田のゆるポジ占い 2020年上半期の運勢</dd><hr>
+        <dt><a href="https://nonno.hpplus.jp/article/47269" target="_blank">nonno</a></dt><dd>- 2020年最強ハッピーガール占い</dd><hr>
+        <dt><a href="https://numero.jp/news-20191205-astrology/" target="_blank">Numero TOKYO</a></dt><dd>- 2020年上半期の運勢</dd><hr>
+        <dt><a href="https://www.nylon.jp/horoscope/2020" target="_blank">NYLON JAPAN</a></dt><dd>- 2020年上半期の運命は？　ハッピー ホロスコープ占いをチェック！</dd><hr>
+        <dt><a href="https://oggi.jp/105124" target="_blank">Oggi</a></dt><dd>- 裏ホロスコープ占い2020年上半期の運勢</dd><hr>
+        <dt><a href="https://ontomo-mag.com/article/column/horoscope-special-2019/" target="_blank">ONTOMO</a></dt><dd>- 青石ひかりの12星座☆音楽占い（2019年下半期）ラッキーミュージックアクティビティで運気アップ！</dd><hr>
+        <dt><a href="https://otonasalone.jp/fortune/" target="_blank">OTONA SALONE</a></dt><dd>- スイーツ占い 2020年106月の運勢</dd><hr>
+        <dt><a href="https://otonasalone.jp/145875/" target="_blank">OTONA SALONE</a></dt><dd>- ガリ占い 2020年上半期</dd><hr>
+        <dt><a href="https://otonasalone.jp/148049/" target="_blank">OTONA SALONE</a></dt><dd>- 2020年上半期のあなたの運勢まとめ【九星フラワー占い】</dd><hr>
+        <dt><a href="https://www.ozmall.co.jp/fortunetelling/horoscope/" target="_blank">OZmall</a></dt><dd>- 鏡リュウジ監修！12星座占い2020年上半期</dd><hr>
+        <dt><a href="https://picora.net/horoscopes/" target="_blank">Picora</a></dt><dd>- 2020年上半期運</dd><hr>
+        <dt><a href="https://www.preciousplatinum.jp/jewelleryfortune/" target="_blank">Platinum Guild International</a></dt><dd>- Platinum Guild International 幸運を引き寄せる2020ラッキージュエリー</dd><hr>
+        <dt><a href="https://www.plumoi.jp/fc/nenun/" target="_blank">plumoi</a></dt><dd>- 2020年の運勢</dd><hr>
+        <dt><a href="https://youpouch.com/2020/01/01/598467/" target="_blank">Pouch</a></dt><dd>- 【年運スペシャル】よってけ！ ポタちゃんち【2020年版】</dd><hr>
+        <dt><a href="https://precious.jp/articles/-/15999" target="_blank">Precious.jp</a></dt><dd>- 2020年上半期マダム・モニカの12星座占い</dd><hr>
+        <dt><a href="https://ray-web.jp/53625?page=1" target="_blank">Ray</a></dt><dd>- 【2020年年間占い】　ルナ=&ネコ占い　あなたの愛と運勢</dd><hr>
+        <dt><a href="https://ray-web.jp/53572" target="_blank">Ray</a></dt><dd>- 【2020年の12星座占い】恋愛運＆仕事運＆金運 by愛の伝道師JUNO</dd><hr>
+        <dt><a href="https://ray-web.jp/fortunes/otona_doubutu2020" target="_blank">Ray</a></dt><dd>- 大人の動物占い【2020年の運勢】</dd><hr>
+        <dt><a href="https://ray-web.jp/fortunes/otona_doubutu2020" target="_blank">Regina</a></dt><dd>- 12星座が導く　☆ラッキーゴルフ12星座占い☆</dd><hr>
+        <dt><a href="https://spirituabreath.com/unsei_2020-62210.html" target="_blank">SPIBRE</a></dt><dd>- 【2020年の運勢】ハワイアン・フラワーで占う令和2年はどんな１年？</dd><hr>
+        <dt><a href="https://spur.hpplus.jp/fortune/special/francesca_2020firsthalf/area02/" target="_blank">SPUR.JP</a></dt><dd>- アモーレ占星術2020年上半期</dd><hr>
+        <dt><a href="http://www.star-reading.jp/singlefolder/year/year.html" target="_blank">star reading</a></dt><dd>- 陰陽五行　今年の運勢</dd><hr>
+        <dt><a href="https://stylehaus.jp/pages/horoscope/2020-h1/" target="_blank">Style Haus</a></dt><dd>- YATAのラグナ占星術 2020年上半期の運勢</dd><hr>
+        <dt><a href="https://style-knowledge.com/category/fortune‐telling・fuusui/page/2/" target="_blank">Style Knowledge</a></dt><dd>- 2020年（令和2年）の年運勢占い 星読み</dd><hr>
+        <dt><a href="https://tourei.net/2192" target="_blank">TACHIKI TOUREI のオフィシャルウェブサイト</a></dt><dd>- 2020年度の十二星座の運勢をお届けします。</dd><hr>
+        <dt><a href="https://tanosu.com/lifestyle/52971/" target="_blank">TANOSU</a></dt><dd>- 【2020年】あなたの運勢は？明羅☆天音の星座別占い</dd><hr>
+        <dt><a href="https://telling.asahi.com/article/12989552" target="_blank">telling</a></dt><dd>- 2020年前半の12星座別運勢</dd><hr>
+        <dt><a href="https://www.timeout.jp/tokyo/ja/things-to-do/uranai2020" target="_blank">TimeOut</a></dt><dd>- 2020年の運勢</dd><hr>
+        <dt><a href="https://www.tjapan.jp/entertainment/17322824" target="_blank">T Japan</a></dt><dd>- 濱 美奈子 ハーモニー占星術2020年のあなたの運勢と開運フレグランス</dd><hr>
+        <dt><a href="https://this.kiji.is/-/labels/オラクル?unit=272179690906387957&all=true" target="_blank">TOKYO FM+</a></dt><dd>- 【2020年の運勢】12星座別「オラクルカード占い」</dd><hr>
+        <dt><a href="https://tfm-plus.gsj.mobi/news/QMpAPuFduf.html?showContents=detail" target="_blank">TOKYO FM+</a></dt><dd>- 【2020年の運勢】12星座別：魔法の古代文字「ルーン」占い</dd><hr>
+        <dt><a href="https://8761234.jp/2020unsei" target="_blank">URASOE</a></dt><dd>- 2020年の運勢占い｜12星座×月別解説</dd><hr>
+        <dt><a href="https://www.25ans.jp/horoscope/focus/ryuujifortune_200115/" target="_blank">25ans</a></dt><dd>- 【2020年上半期】鏡リュウジの"運が輝く"エレガント占星術</dd><hr>
+        <dt><a href="https://www.25ans.jp/horoscope/focus/yujisuccsessfortune_191225_vc/" target="_blank">25ans</a></dt><dd>- 全体の運勢やお仕事運をチェック！12星座のサクセス占い2020</dd><hr>
+        <dt><a href="https://veryweb.jp/fortune/65069/" target="_blank">VERY</a></dt><dd>- あおきさん占い 2020年上半期の運勢エレメント別リスト</dd><hr>
+        <dt><a href="https://www.verygood.la/?tag=辛口オネエの2020年上半期占い" target="_blank">Verygood</a></dt><dd>- あおきさん占い 2020年上半期の運勢エレメント別リスト</dd><hr>
+        <dt><a href="https://www.vivi.tv/uranai/shiratama/thefirsthalf/" target="_blank">ViVi</a></dt><dd>- サーヤのけしかけ！しらたま占い【2020年上半期の運勢 総まとめ編】</dd><hr>
+        <dt><a href="https://www.vivi.tv/selfbrandingfortune/" target="_blank">ViVi</a></dt><dd>- 【2020年上半期！】真木あかりのセルフブランディング占い！</dd><hr>
+        <dt><a href="https://i-voce.jp/feed/15865/" target="_blank">VOCE</a></dt><dd>- 2020年上半期【ステラ薫子のタロット×12星座占い】</dd><hr>
+        <dt><a href="https://i-voce.jp/feed/15867/" target="_blank">VOCE</a></dt><dd>- 【2020年上半期】イヴルルド遙華プロデュース！Codeのリーダー杉浦エイトが占う12星座別の恋愛運</dd><hr>
+        <dt><a href="https://i-voce.jp/feed/15956/" target="_blank">VOCE</a></dt><dd>- 【風水心理カウンセラー・谷口令の引き寄せ開運アクション】</dd><hr>
+        <dt><a href="https://i-voce.jp/feed/15718/" target="_blank">VOCE</a></dt><dd>- イヴルルド遙華のマインドナンバー占い【2020年上半期の運勢】</dd><hr>
+        <dt><a href="https://i-voce.jp/feed/15930/" target="_blank">VOCE</a></dt><dd>- 【2020年上半期の恋愛運】【Love Me Doの開運占星術】</dd><hr>
+        <dt><a href="https://www.vogue.co.jp/horoscope/yearly" target="_blank">VOGUE.com</a></dt><dd>- スーザン・ミラーによる、2020年年間占い</dd><hr>
+        <dt><a href="https://voguegirl.jp/horoscope/shiitake2020-h1/" target="_blank">VOGUE.com</a></dt><dd>- 2020年上半期しいたけ占い</dd><hr>
+        <dt><a href="https://withonline.jp/fortune/il8i0" target="_blank">with online</a></dt><dd>- 細木かおりの六星占術で見る【2020年上半期恋愛運a&】</dd><hr>
+        <dt><a href="http://uranai.wizbiz.me/fortune/index.html" target="_blank">WizBiz経営者占い</a></dt><dd>- 九星気学でみる2020年の運勢</dd><hr>
+        <dt><a href="https://www.womenshealthmag.com/jp/culture/g30145829/2020-20191226/" target="_blank">Women's Health</a></dt><dd>- 運を味方に！星座別占い・2020年の全体運</dd><hr>
+        <dt><a href="https://www.womenshealthmag.com/jp/culture/g30247770/2020-fitnesss-20191227/" target="_blank">Women's Health</a></dt><dd>- 星座別占い×2020年おすすめフィットネス</dd><hr>
+        <dt><a href="https://www.womo.jp/column/detail/40412/" target="_blank">womo</a></dt><dd>- 「算命学」でみる、わたしの本質と2020年の運勢</dd><hr>
+        <dt><a href="https://yolo.style/for_lo191228_001/" target="_blank">YOLO</a></dt><dd>- ビクトリア更のマジカルフォーチューン 2020年1月06月　12星座の運勢【総合】</dd><hr>
+        <dt><a href="https://ameblo.jp/zephyr/entry-12429221923.html?frm=theme" target="_blank">ZEPHYR</a></dt><dd>- 2020年の火のエレメントの運勢（牡羊座　獅子座　射手座）</dd><hr>
+        <dt><a href="https://ameblo.jp/zephyr/entry-12429962670.html?frm=theme" target="_blank">ZEPHYR</a></dt><dd>- 2020年の地のエレメントの運勢（牡牛座　乙女座　山羊座）</dd><hr>
+        <dt><a href="https://ameblo.jp/zephyr/entry-12430128532.html?frm=theme" target="_blank">ZEPHYR</a></dt><dd>- 2020年の風のエレメントの運勢（双子座　天秤座　水瓶座）</dd><hr>
+        <dt><a href="https://ameblo.jp/zephyr/entry-12430128483.html?frm=theme" target="_blank">ZEPHYR</a></dt><dd>- 2020年の水のエレメントの運勢（蟹座　蠍座　魚座）</dd><hr>
+        <dt><a href="https://zired.net/seiyou-12seizauranai/" target="_blank">zired</a></dt><dd>- 12星座占い！あなたの性格・相性【2020無料版】 </dd><hr>
+        <dt><a href="https://www.xn--2020-853c378rghq.jp/12seiza" target="_blank">2020年占い.JP</a></dt><dd>- 12星座別で2020年の運勢を徹底解説 - 2020年（令和２年）の占い</dd><hr>
+        <dt><a href="http://2019年運勢.net/" target="_blank">2021年運勢.com</a></dt><dd>- 2021年の運勢占い</dd><hr>
+        <dt><a href="https://uranai.me/blog/category/星座占い/" target="_blank">2020年運勢占いME</a></dt><dd>- 当たる無料占い!!2020年運勢占いME</dd><hr>
+        <dt><a href="https://www.spihow.com/kaiun/nextmonth/#nextmt4" target="_blank">スピリチュアル How to … スピハウ</a></dt><dd>- 2020年の運勢！西洋占星術で占う無料12星座別当たる占い</dd><hr>
+        <dt><a href="http://renaiunup.blog.jp/archives/1839059.html" target="_blank">浅岡美穂の★恋愛運UPしま専科</a></dt><dd>- ダ・ヴィンチ・タロットで占う2020年の年間占い</dd><hr>
+        <dt><a href="https://teddyangel.com/2020uranai" target="_blank">アリスの占い館</a></dt><dd>- 2020年上半期運勢を無料で占う！恋愛運・仕事運から月ごとの運勢まで徹底診断！</dd><hr>
+        <dt><a href="http://www.rosemary.ne.jp/alpha/horoscope/2020kami.htm" target="_blank">アルファー占い館</a></dt><dd>- 2020年上半期の運勢</dd><hr>
+        <dt><a href="http://uranaiange.com/12seiza.html" target="_blank">アンジュ</a></dt><dd>- 無料2020年運勢占いアンジュ</dd><hr>
+        <dt><a href="https://8761234.jp/2020unsei/2020first" target="_blank">ウラソエ [URASOE]</a></dt><dd>- 2020年の運勢</dd><hr>
+        <dt><a href="https://ailauranai.com/unsei2020.php" target="_blank">占いアイラ</a></dt><dd>- 運勢2020無料診断</dd><hr>
+        <dt><a href="http://www.momocafe.ouchi.to/year/" target="_blank">占いカフェ</a></dt><dd>- 誕生日占い</dd><hr>
+        <dt><a href="http://noa2003.cafe.coocan.jp/unsei20.html" target="_blank">占いカフェ　NOA</a></dt><dd>- 2020年の運勢（2/4～2021年2/3)</dd><hr>
+        <dt><a href="https://uranai.d-square.co.jp/navi_genre_12seiza_2020.html" target="_blank">占いスクエア</a></dt><dd>- 今年（2020年）の運勢 星座</dd><hr>
+        <dt><a href="https://uranai.d-square.co.jp/navi_genre_12seiza_2020.html" target="_blank">占いスクエア</a></dt><dd>- 2021年（来年）の総合運 星座占い </dd><hr>
+        <dt><a href="https://coco.sapr.jp/2019/10/2020．/" target="_blank">占いとカウンセリングの店COCO</a></dt><dd>- ”COCOの星の天気予報”　2020年世の中の雰囲気と年間12星座運勢</dd><hr>
+        <dt><a href="https://izumi.uranai.jp/article/IZ0014209" target="_blank">占いの泉</a></dt><dd>- 錢天牛先生が占う2020年上半期の全体運</dd><hr>
+        <dt><a href="https://izumi.uranai.jp/article/IZ0014211" target="_blank">占いの泉</a></dt><dd>- 錢天牛先生が占う2020年上半期の仕事運</dd><hr>
+        <dt><a href="https://izumi.uranai.jp/article/IZ0014210" target="_blank">占いの泉</a></dt><dd>- 錢天牛先生が占う2020年上半期の恋愛運</dd><hr>
+        <dt><a href="https://館.net/archives/category/2020" target="_blank">占いの館</a></dt><dd>- 2020年の12星座の運勢</dd><hr>
+        <dt><a href="http://www.lamp-web.com/free/year/" target="_blank">占いの館ランプ</a></dt><dd>- さくら先生の西洋占星術・タロットで占う２０２０年の運勢</dd><hr>
+        <dt><a href="https://uranaitv.jp/content/tag/2020unsei" target="_blank">占いＴＶニュース</a></dt><dd>- 2020年の運勢</dd><hr>
+        <dt><a href="https://tankyuu.net/eki/unki/" target="_blank">易占研究</a></dt><dd>- 2020年5月～2021年4月</dd><hr>
+        <dt><a href="https://sumitai.ne.jp/urayasu/2020-01-01/70694.html" target="_blank">浦安に住みたい！web</a></dt><dd>- 【2020年上半期1月～6月の占い】 ネレイド香保瑠による12星座占い</dd><hr>
+        <dt><a href="https://ogatism.jp/post/fortune2020" target="_blank">ogatism</a></dt><dd>- オガティの星占い</dd><hr>
+        <dt><a href="https://okigaku.com/unsei_nen/r02.html" target="_blank">お気楽.Com～西欽也の気学教室～</a></dt><dd>- 2020年の運勢</dd><hr>
+        <dt><a href="https://www.shiga-create.jp/moa/archives/id/3336/cate/culture/" target="_blank">おでかけmoa</a></dt><dd>- 気になる今年の運勢は？星座占い2020</dd><hr>
+        <dt><a href="http://www.otenki.jp/sp/art/yearly_fortune/" target="_blank">お天気JAPAN</a></dt><dd>- 2020年の運勢</dd><hr>
+        <dt><a href="https://opi-rina.chunichi.co.jp/special/2020uranai.html" target="_blank">オピ・リーナ</a></dt><dd>- 2020年　外山聖珠先生の12星座占い</dd><hr>
+        <dt><a href="https://crosset.onward.co.jp/feature/10th_fortune/" target="_blank">オンワード・クローゼット</a></dt><dd>- 青木良文さん監修！2020年エレメント占い</dd><hr>
+        <dt><a href="https://開運サプリ.com/category/fortune/2020/" target="_blank">開運サプリ</a></dt><dd>- 2020年の運勢</dd><hr>
+        <dt><a href="https://kaelife.hondaaccess.jp/entry/20200205_01" target="_blank">カエライフ</a></dt><dd>- 2020年の運勢は？ ラブちゃんが西洋占星術で仕事運と恋愛運を占います！</dd><hr>
+        <dt><a href="https://2996.info/tag/2020kami/" target="_blank">開運 福来る info</a></dt><dd>- 2020 上半期 運勢 九星気学</dd><hr>
+        <dt><a href="https://www.kateigaho.com/home/nayami/67595/" target="_blank">家庭画報</a></dt><dd>- 【12星座別】2020年上半期の運勢は？ジョニー楓の星占い</dd><hr>
+        <dt><a href="https://www.kateigaho.com/home/63873/" target="_blank">家庭画報</a></dt><dd>- 四柱推命で占う2020年の運勢。ハッピー指数や月ごとの開運アドバイスも【九星別】</dd><hr>
+        <dt><a href="https://www.the-uranai.jp/column/year-of-2020/2020-first-luck/" target="_blank">カナウ</a></dt><dd>- 2020年上半期の運勢特集</dd><hr>
+        <dt><a href="http://www.renkindou.com/pc/year/index.html" target="_blank">数秘術　カバラ占い無料！</a></dt><dd>- 今年占い</dd><hr>
+        <dt><a href="https://girlswalker.com/girlsfarm/2020kamihanki/" target="_blank">ガールズウォーカー</a></dt><dd>- 2020年上半期ガル農園占い</dd><hr>
+        <dt><a href="http://karula.ryuse.jp/unsei/2017_01.html" target="_blank">カルラ　Mami Mayama</a></dt><dd>- 2020年上半期 太陽星座別のテーマ</dd><hr>
+        <dt><a href="http://st.sakura.ne.jp/~iyukari/idline2020.html" target="_blank">筋トレ</a></dt><dd>- 2020年の星占い</dd><hr>
+        <dt><a href="http://cainer.jp/annual/" target="_blank">ケイナー・ホロスコープ</a></dt><dd>- 今年の予報 - オスカー・ケイナー</dd><hr>
+        <dt><a href="https://www.gentosha.jp/article/14271/" target="_blank">幻冬舎plus</a></dt><dd>- 2020年上半期の星占い｜午前0時の恋愛相談 ～ご縁の法則｜真木あかり </dd><hr>
+        <dt><a href="https://www.gentosha.jp/article/14129/" target="_blank">幻冬舎plus</a></dt><dd>- 2020年前半の運勢【東洋二十四節気星占い】</dd><hr>
+        <dt><a href="https://koigaku.machicon.jp/column/289334/" target="_blank">恋学</a></dt><dd>- 幻冬舎plus　2020年前半の運勢【東洋二十四節気星占い】</dd><hr>
+        <dt><a href="https://www.zwei.com/koisupple/16965.html" target="_blank">恋サプリ</a></dt><dd>- 【2020年度】ステラ薫子の12星座結婚運占い</dd><hr>
+        <dt><a href="https://365uranai.net/2020kamihanki_unsei/21810/" target="_blank">恒星占星術|365日誕生日占い.net</a></dt><dd>- 2020年上半期の運勢</dd><hr>
+        <dt><a href="https://cocoloni.jp/tag/2020/" target="_blank">ココロニプロロ</a></dt><dd>- 2020年の運勢</dd><hr>
+        <dt><a href="https://ameblo.jp/siruveinu556556/entry-12561389462.html?frm=theme" target="_blank">こころの占いナビ</a></dt><dd>- ２０２０年の占い</dd><hr>
+        <dt><a href="http://www.moonlabo.com/cgi-bin/cln/cln_clm.cgi?MNu=&OpDv=stewix" target="_blank">暦と占い工房MoonLABO</a></dt><dd>- 四柱推命ルーム</dd><hr>
+        <dt><a href="https://pado-nns.com/topics/a000_uranai_2020" target="_blank">さかにゅー</a></dt><dd>- あなたの2020年の運勢は？</dd><hr>
+        <dt><a href="https://ren-sunny.com/2020-tarot/2020tarot.html" target="_blank">サニー・レン</a></dt><dd>- サニー・レンの　2020年のタロット占い</dd><hr>
+        <dt><a href="https://ilike.style/13332" target="_blank">35style</a></dt><dd>- 【無料☆12星座占い】2020年（令和2年）の運勢は？～全体運・仕事運・金運</dd><hr>
+        <dt><a href="http://shimizu-yukie.com/2013.html" target="_blank">幸せづくりのお手伝い　志水悠記衣.com</a></dt><dd>- 2020年の運勢</dd><hr>
+        <dt><a href="https://www.sion-web.co.jp/article/uranai_2020/" target="_blank">紫苑</a></dt><dd>- 霊感×西洋占星術で知る 2020年 貴女の運勢占い</dd><hr>
+        <dt><a href="https://www.jalan.net/news/article/414586/" target="_blank">じゃらん</a></dt><dd>- 【星座別占い】2020年のおでかけ開運アドバイス！有名占星術研究家が指南</dd><hr>
+        <dt><a href="https://uranaimaster.net/2020-2/" target="_blank">シャンティーの幸運を呼ぶ秘密の奥義</a></dt><dd>- 2020年 運勢 吉方位</dd><hr>
+        <dt><a href="https://syuraba.life/tag/year" target="_blank">修羅場ライフ</a></dt><dd>- 年運</dd><hr>
+        <dt><a href="https://www.weekend-kanazawa.com/entry/fortunetelling_kanazawa_2020" target="_blank">週末、金沢</a></dt><dd>- 【開運】2020年の金沢市民の運勢を星座占いで大発表！</dd><hr>
+        <dt><a href="http://shogyokai.jp/articles/-/2333" target="_blank">商業界オンライン</a></dt><dd>- 「ビジネス星占い」あなたの気になる運勢は？ -- 2020年の星の動きから紹介</dd><hr>
+        <dt><a href="http://shingeji.jp/2019/12/31/2020年12星座の年運/" target="_blank">心華寺</a></dt><dd>- 2020年12星座の年運</dd><hr>
+        <dt><a href="https://suits-woman.jp/horoscope/akuma/" target="_blank">スーツ | 働く堅実女子のお悩み解決サイト</a></dt><dd>- 今年もやります！ 『悪魔の占い』2020年版、特別公開</dd><hr>
+        <dt><a href="https://stylevoice.com/Form/Story/StoryDetail.aspx?stid=ST00000170" target="_blank">スタイルヴォイス　ドットコム</a></dt><dd>- 2020年・12星座別 運気アップ占い ラッキーアイテムリストつき</dd><hr>
+        <dt><a href="https://spiritualife.net/kabara/kabara-nen/" target="_blank">スピリチュアルライフ</a></dt><dd>- カバラ数秘術で占う2020年の運勢</dd><hr>
+        <dt><a href="https://www.spihow.com/category/kaiun/2020unsei/" target="_blank">スピリチュアルHow to</a></dt><dd>- 2020年の運勢</dd><hr>
+        <dt><a href="https://smarby.jp/articles/author/77" target="_blank">スマービー</a></dt><dd>- 【2020年上半期運勢】お財布占いランキング</dd><hr>
+        <dt><a href="https://smarby.jp/articles/author/77" target="_blank">スマービー</a></dt><dd>- 【2020年上半期運勢】パートナーに愛され度ランキング</dd><hr>
+        <dt><a href="http://sacorin.com/fortune/thisyear/" target="_blank">セレーネ･沙湖の占星カウンセリング</a></dt><dd>- 12星座別に観た、2020年の運勢
+        </dd><hr>
+        <dt><a href="https://serendipity-japan.com/tag/2019年" target="_blank">セレンディピティ</a></dt><dd>- 【2020年】今月の運勢 ※ 毎月更新中
+        </dd><hr>
+        <dt><a href="https://spirituabreath.com/unsei_2020-62210.html" target="_blank">SPIBRE</a></dt><dd>- 【2020年の運勢】ハワイアン・フラワーで占う令和2年はどんな１年？</dd><hr>
+        <dt><a href="http://tarotkingdom.jugem.jp/?eid=669" target="_blank">タロット王国</a></dt><dd>- ★ホロスコープで読む１２サイン『２０２０年の幸運になる運勢』 </dd><hr>
+        <dt><a href="http://ww5.tiki.ne.jp/~uranai/year/" target="_blank">中央運命学カウンセリング</a></dt><dd>- ♪♪☆☆2020年の運勢 ☆☆♪♪</dd><hr>
+        <dt><a href="https://www.dinos.co.jp/luckygoods_s/" target="_blank">ディノス</a></dt><dd>- マリィ・プリマヴェラの星座占い 2020年の運勢は？</dd><hr>
+        <dt><a href="https://tocana.jp/2020/01/post_131313_entry.html" target="_blank">トカナ</a></dt><dd>- 【超的中】2020年「真の星占い」が当たりまくる！ “嘘が言えない”Love Me Do氏が12星座の運勢をシビアに解説！</dd><hr>
+        <dt><a href="https://toranet.jp/ct/tsubo-sp/tsubo-sp-top.html" target="_blank">とらばーゆ</a></dt><dd>- 運命のツボ 2020 SPECIAL</dd><hr>
+        <dt><a href="https://www.bcfortune.biz/?cat=475" target="_blank">トレバー占星術・公式ブログ【Making Destiny】</a></dt><dd>- 2020年の運勢・12星座別解説</dd><hr>
+        <dt><a href="https://doors.nikkei.com/atcl/wol/column/15/053100081/120500158/" target="_blank">日経doors</a></dt><dd>- 【力士占いスペシャル】2019・2020年の仕事運</dd><hr>
+        <dt><a href="https://nichigopress.jp/live/erisia/193902/" target="_blank">日豪プレス</a></dt><dd>- 2020年の星占い「あなたの運勢」By エリシア</dd><hr>
+        <dt><a href="https://harmonie17.com/hpgen/HPB/entries/69.html" target="_blank">ハーブ専門店 ハルモニエ</a></dt><dd>- 12星座占い　2020年の星回り</dd><hr>
+        <dt><a href="https://www.bs-log.com/20191230_1392331/" target="_blank">ビーズログ.com</a></dt><dd>- 【新年特別企画】12星座別★2020年ときめき運占い☆ラッキーアイテム＆落とし穴ポイントも</dd><hr>
+        <dt><a href="https://www.pikara.net/contents/details.php?id=1609" target="_blank">ピカラタウン</a></dt><dd>- 島石州の九星気学 特別篇≫2020年の運勢</dd><hr>
+        <dt><a href="http://madamefigaro.jp/fortune/juan/year/" target="_blank">フィガロジャポン</a></dt><dd>- 今年の運勢(年運)・恋愛運 - 中森じゅあんの算命学占い</dd><hr>
+        <dt><a href="https://fytte.jp/author/lovemedo/page/5/" target="_blank">フィッテ</a></dt><dd>- #恋を引き寄せるラブちゃん占い</dd><hr>
+        <dt><a href="http://www.akumanouranai.com/year/index.html" target="_blank">ベルゼブブの悪魔の占い</a></dt><dd>- 悪魔VS天使 2020年運命のTALK BATTLE</dd><hr>
+        <dt><a href="http://www5a.biglobe.ne.jp/~houon/unsei-nen.htm" target="_blank">法恩院</a></dt><dd>- 令和２年（庚子）の運勢</dd><hr>
+        <dt><a href="https://uranai-unsei.com/tag/2020年の運勢/" target="_blank">坊主の占いシリーズ</a></dt><dd>- 【当たらない占い師】坊主「神在聖」の占いシリーズ！年間運勢版</dd><hr>
+        <dt><a href="https://www.homes.co.jp/cont/living/living_00557/" target="_blank">ホームズ</a></dt><dd>- 〈12星座別〉ぷりあでぃす玲奈が占う！ 2020年の運勢&住まい選びのヒント</dd><hr>
+        <dt><a href="https://sup.andyou.jp/hoshi/fortune_2020/" target="_blank">星読みテラス</a></dt><dd>- 【2020年運勢】星読みで知る一年【星座別ランキングあり】</dd><hr>
+        <dt><a href="https://mainichikirei.jp/article/20191228dog00m100011000c.html" target="_blank">毎日キレイ</a></dt><dd>- 2020年の運勢：星占いでランキング　1位はあの星座！</dd><hr>
+        <dt><a href="https://maquia.hpplus.jp/keyword/QmQoKSM?group=editor" target="_blank">マキアオンライン</a></dt><dd>- 占い</dd><hr>
+        <dt><a href="https://www.marronniergate.com/fortune/" target="_blank">マロニエゲート銀座</a></dt><dd>- 占いの館フォーチュンキュアの松本秀美先生による2020年の運勢</dd><hr>
+        <dt><a href="https://www.e-shinro.com/dnk/MANTEN/info/2019/1225_0108_3.htm" target="_blank">e-shinro</a></dt><dd>- 星のインフォメーション｜満天王の星占い</dd><hr>
+        <dt><a href="https://uranailady.com/01_total.html" target="_blank">無料占サイト「恋愛と人間関係」</a></dt><dd>- 今年の運勢[無料]全体運や人生占い、吉凶診断など総合運</dd><hr>
+        <dt><a href="https://www.moonlabo.com/cafe/moon/?OpDv=p91152000" target="_blank">ムーンラボカフェ</a></dt><dd>- 運勢天気予報 2020</dd><hr>
+        <dt><a href="https://news.merumo.ne.jp/article/genre/9314418" target="_blank">趣味女子を応援するメディア「めるも」</a></dt><dd>- ★2020年★12星座ランキング★上半期の運勢を大公開!!!</dd><hr>
+        <dt><a href="https://www.liner.jp/news/article/astrology2020/" target="_blank">旭川・道北のニュース [ライナーウェブ]</a></dt><dd>- 年間西洋占星術占い　2020年の運勢は？ - 西洋占星術 平田禎愛</dd><hr>
+        <dt><a href="http://www.e-lapis.net/good-luck-method/fortune2016" target="_blank">電話占い　ラピス</a></dt><dd>- 2020年前半の運勢</dd><hr>
+        <dt><a href="https://www.qjnavi.jp/special/horoscopes/2019_12_20/" target="_blank">リクエストQJナビ</a></dt><dd>- 2020年上半期の運勢-メグ★マジョリーナの美容師占い</dd><hr>
+        <dt><a href="https://mrs.living.jp/k_life/article/3666188" target="_blank">リビングくらしナビ</a></dt><dd>- 12星座年間占い 2020年の運勢は？(1/13) </dd><hr>
+        <dt><a href="https://raymin.jp/year/" target="_blank">れいみん式 輝翔運命暦</a></dt><dd>- ２０２０年のあなたの運勢</dd><hr>
+        <dt><a href="https://uranai-renai.com/2020uranai/" target="_blank">恋愛占いペナル</a></dt><dd>- 運勢2020</dd><hr>
+        <dt><a href="https://laurier.press/i/E1577322328143" target="_blank">ローリエプラス</a></dt><dd>- 星座別【2020年の恋と運勢】今年はどんな1年になる？</dd><hr>
+        <dt><a href="https://www.shiseido.co.jp/sw/beautyinfo/DB009076/" target="_blank">ワタシプラス</a></dt><dd>- 【2020年上半期の運勢】ホロッと泣ける☆話題の占い師ルーシー・グリーンの12星座占い</dd><hr>
+      </dl>
+    </div>
+    <div data-role="footer">
+    </div>
+  </div>
+        
+        
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>
